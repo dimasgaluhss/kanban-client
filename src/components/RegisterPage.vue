@@ -30,7 +30,7 @@ export default {
     methods: {
         register() {
             axios({
-                url: '',
+                url: 'https://kanban-app-heroku.herokuapp.com/register',
                 method: 'post',
                 data: {
                     email: this.email,

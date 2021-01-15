@@ -71,7 +71,7 @@ export default {
         },
         fetchTasks() {
             axios({
-                url: '',
+                url: 'https://kanban-app-heroku.herokuapp.com/tasks',
                 method: 'get',
                 headers: {
                     access_token: localStorage.getItem('access_token')
@@ -104,7 +104,7 @@ export default {
         },
         addTask(task) {
             axios({
-                url: '',
+                url: 'https://kanban-app-heroku.herokuapp.com/tasks',
                 method: 'post',
                 headers: {
                     access_token: localStorage.getItem('access_token')
@@ -124,7 +124,7 @@ export default {
         },
         updateTask(task) {
             axios({
-                url: '' + localStorage.getItem('updateId'),
+                url: 'https://kanban-app-heroku.herokuapp.com/tasks/' + localStorage.getItem('updateId'),
                 method: 'put',
                 headers: {
                     access_token: localStorage.getItem('access_token')

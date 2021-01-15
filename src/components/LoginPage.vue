@@ -37,7 +37,7 @@ export default {
         },
         login() {
             axios({
-                url: '',
+                url: 'https://kanban-app-heroku.herokuapp.com/login',
                 method: 'post',
                 data: {
                     email: this.email,
