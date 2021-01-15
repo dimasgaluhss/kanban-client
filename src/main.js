@@ -1,15 +1,6 @@
-import Vue from 'vue';
-import App from './App.vue';
-import axios from 'axios'
-
-Vue.use({
-  install(Vue) {
-    Vue.prototype.$api = axios.create({
-      baseURL: 'https://localhost:3000'
-    })
-  }
-})
+import Vue from "vue"
+import App from "./App.vue"
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    render: h => h(App)
+}).$mount('#App')
